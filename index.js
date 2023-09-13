@@ -34,7 +34,7 @@ inquirer.prompt(pathQuestions).then((paths) => {
         columnHeaders = Object.keys(row);
       }
 
-      const jsonObject = {}; //JSON object with header as key
+      const jsonObject = {}; //JSON object with headers as keys
       columnHeaders.forEach((header) => {
         jsonObject[header] = row[header];
       });
